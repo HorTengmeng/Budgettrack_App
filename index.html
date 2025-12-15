@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="title">
+                <h2>Personal Budget Tracker App</h2>
+            </div>
+            <div class="input">
+                <label for="amount">Amount (+ for income, -for expense)</label> <br>
+                <input type="text" id="amount" placeholder=" e.g 50 or 30">
+            </div>
+            <div class="input">
+                <label for="amount">Remark / Note</label> <br>
+                <input type="text" id="remark" placeholder=" Grocery,Foods,Transport">
+            </div>
+            <div class="btn-add">
+                <button type="button" id="addBtn">Add Entry</button>
+                <button type="button" id="clearBtn" class="btn-clear">Clear Data</button>
+            </div>
+            <div class="Balance">
+                <div class="title">
+                    Current Balance
+                </div>
+                <div class="box-record">
+                    <p id="totalEntries">Total Entries : 0</p>
+                    <p id="currentBalance">Current Balance : 0.00</p>
+                </div>
+            </div>
+        </form>
+        <div class="table-section">
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Amount</th>
+                    <th>Remark</th>
+                    <th>Balance After</th>
+                </tr>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
